@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EC780D7A64B0135834C1BBD /* Pods_FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690A750DDE8D035B2EAABED6 /* Pods_FSPagerView.framework */; };
 		50C44A1D2150E7800093B3E9 /* FSPagerViewObjcCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C44A1C2150E7800093B3E9 /* FSPagerViewObjcCompat.h */; };
 		F931E0062158A062001B2A01 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F931E0052158A062001B2A01 /* FSPagerViewObjcCompat.m */; };
 		F9580B7B1E5D9F0600C5B267 /* FSPagerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F9580B791E5D9F0600C5B267 /* FSPagerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31B545FBDAC05AA2A3C04AFC /* Pods-FSPagerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPagerView.debug.xcconfig"; path = "Target Support Files/Pods-FSPagerView/Pods-FSPagerView.debug.xcconfig"; sourceTree = "<group>"; };
 		50C44A1C2150E7800093B3E9 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		690A750DDE8D035B2EAABED6 /* Pods_FSPagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F931E0052158A062001B2A01 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
 		F9580B761E5D9F0600C5B267 /* FSPagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9580B791E5D9F0600C5B267 /* FSPagerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPagerView.h; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		F9580B861E5D9F2B00C5B267 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
 		F9580B871E5D9F2B00C5B267 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
 		F9D7BD291E63DD5F003F6A0E /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		FB503FAE6FA440F512AD2213 /* Pods-FSPagerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPagerView.release.xcconfig"; path = "Target Support Files/Pods-FSPagerView/Pods-FSPagerView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC780D7A64B0135834C1BBD /* Pods_FSPagerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B55D8769CECE5529450777E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B545FBDAC05AA2A3C04AFC /* Pods-FSPagerView.debug.xcconfig */,
+				FB503FAE6FA440F512AD2213 /* Pods-FSPagerView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9DB40300BC6C768C143AF2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690A750DDE8D035B2EAABED6 /* Pods_FSPagerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9580B6C1E5D9F0600C5B267 = {
 			isa = PBXGroup;
 			children = (
 				F9580B811E5D9F2B00C5B267 /* Sources */,
 				F9580B781E5D9F0600C5B267 /* FSPagerView */,
 				F9580B771E5D9F0600C5B267 /* Products */,
+				1B55D8769CECE5529450777E /* Pods */,
+				A9DB40300BC6C768C143AF2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9580B7E1E5D9F0600C5B267 /* Build configuration list for PBXNativeTarget "FSPagerView" */;
 			buildPhases = (
+				BA724A54448D1F8EB52165FC /* [CP] Check Pods Manifest.lock */,
 				F9580B711E5D9F0600C5B267 /* Sources */,
 				F9580B721E5D9F0600C5B267 /* Frameworks */,
 				F9580B731E5D9F0600C5B267 /* Headers */,
@@ -132,9 +158,8 @@
 				TargetAttributes = {
 					F9580B751E5D9F0600C5B267 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HZF422TY46;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -164,6 +189,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA724A54448D1F8EB52165FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSPagerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9580B711E5D9F0600C5B267 /* Sources */ = {
@@ -303,20 +353,23 @@
 		};
 		F9580B7F1E5D9F0600C5B267 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B545FBDAC05AA2A3C04AFC /* Pods-FSPagerView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HZF422TY46;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FSPagerView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenchaod.FSPagerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -325,20 +378,23 @@
 		};
 		F9580B801E5D9F0600C5B267 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB503FAE6FA440F512AD2213 /* Pods-FSPagerView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HZF422TY46;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FSPagerView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenchaod.FSPagerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};

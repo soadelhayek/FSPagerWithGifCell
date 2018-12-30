@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Nuke
+import FLAnimatedImage
 
 open class FSPagerViewCell: UICollectionViewCell {
     
@@ -41,13 +43,30 @@ open class FSPagerViewCell: UICollectionViewCell {
         let imageView = UIImageView(frame: .zero)
         self.contentView.addSubview(imageView)
         _imageView = imageView
+        imageView.isHidden = !isGifHidden
         return imageView
     }
     
+     open var isGifHidden:Bool = true
+    
+    
+
+    @objc
+    open var gifView: FLAnimatedImageView? {
+        if let _ = _gifView {
+            return _gifView
+        }
+        let imageView = FLAnimatedImageView(frame: .zero)
+        self.contentView.addSubview(imageView)
+        _gifView = imageView
+        imageView.isHidden = isGifHidden
+        return imageView
+    }
 
     fileprivate weak var _textLabel: UILabel?
     fileprivate weak var _imageView: UIImageView?
-    
+    fileprivate weak var _gifView: FLAnimatedImageView?
+
     fileprivate let kvoContext = UnsafeMutableRawPointer(bitPattern: 0)
     fileprivate let selectionColor = UIColor(white: 0.2, alpha: 0.2)
     
@@ -59,8 +78,13 @@ open class FSPagerViewCell: UICollectionViewCell {
         guard let imageView = _imageView else {
             return nil
         }
+        guard let gifview = _gifView else {
+            return nil
+        }
+
         let view = UIView(frame: imageView.bounds)
         imageView.addSubview(view)
+        gifview.addSubview(view)
         _selectedForegroundView = view
         return view
     }
